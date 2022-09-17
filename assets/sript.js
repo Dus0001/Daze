@@ -13,12 +13,13 @@ currentTimeEl.textContent = moment().format("LLLL");
    
 
 var auditHours = function(eventHour) {
+    
     $("li").each(function(){
         
         var getEventHour = $(this).attr("id");
         console.log(getEventHour)
 
-        //remove any old lasses from element
+        //remove any old classes from element
     $("textarea").removeClass("present");
   
     // apply new class if task is near/over due date
@@ -45,14 +46,20 @@ var auditHours = function(eventHour) {
 
   $(".saveBtn").on("click",function() {
     //send event and time to local storage
-    var eventName = $(this).siblings("textarea").val;
+    var eventName = $(this).siblings("textarea").val();
     console.log(eventName);
     var blockTime = $(this).parent().attr("id");
     console.log(blockTime);
 
    //save in localStorage
-   localStorage.setItem(eventName, blockTime);
+   localStorage.setItem(JSON.stringify(eventName), blockTime);
    console.log("saved")
   });
+  
+  setInterval(function() {
+    $(".time-block").each(function() {
+      auditTask($(this));
+    });
+  }, 1800000);
 
   auditHours();
