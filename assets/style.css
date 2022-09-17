@@ -5,6 +5,7 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: 70%;
 }
 
 .jumbotron {
@@ -17,7 +18,8 @@ textarea{
 
 .description{
   white-space: pre-wrap;
-  border: #ffffff;
+  width: 90%;
+   border: #ffffff;
 }
 
 .time-block{
@@ -25,8 +27,8 @@ textarea{
   border-radius: 15px;
   list-style: none;
   display: flex;
-  /*flex-direction: row;
-  justify-content: center;*/
+  flex-direction: row;
+  justify-content: center;
 }
 
 .row {
@@ -39,6 +41,8 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  
+  
 
 }
 
@@ -68,4 +72,6 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
 }

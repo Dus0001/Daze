@@ -18,7 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,52 +30,53 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-      <div class="jumbotron">
+      <div >
         <!-- Timeblocks go here -->
         <ul>
-          <li class="time-block">
-            <h2 class="hour">9 Am</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+          <li class="time-block row" id="9">
+            <h2 class="hour"> 9 Am</h2>
+            <textarea name="Event" class="present" id="nine-am" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
+          <li class="time-block row" id="10">
             <h2 class="hour">10 Am</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+            <textarea name="Event" class="present" id="ten-am" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
+          <li class="time-block row" id="11">
             <h2 class="hour">11 Am</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+            <textarea name="Event" class="present" id="eleven-am" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
+          <li class="time-block row" id="12">
             <h2 class="hour">12 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
-          </li> <li class="time-block">
+            <textarea name="Event" class="present" id="twelve-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
+          </li> 
+          <li class="time-block row"id="13">
             <h2 class="hour">1 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+            <textarea name="Event" class="present" id="one-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
+          <li class="time-block row" id="14">
             <h2 class="hour">2 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+            <textarea name="Event" class="present" id="two-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
-            <h2 class="hour">3 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+          <li class="time-block row"id="15">
+            <h2 class="hour" >3 Pm</h2>
+            <textarea name="Event" class="present" id="three-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
-            <h2 class="hour">4 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+          <li class="time-block row"id="16">
+            <h2 class="hour" >4 Pm</h2>
+            <textarea name="Event" class="present" id="four-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
-          <li class="time-block">
+          <li class="time-block row"id="17">
             <h2 class="hour">5 Pm</h2>
-            <textarea name="Event" id="" cols="30" rows="3"></textarea>
-            <button class="saveBtn"></button>
+            <textarea name="Event" class="present" id="five-pm" cols="30" rows="3"></textarea>
+            <button class="saveBtn"><span class="oi oi-plus mr-2"></span></button>
           </li>
         </ol>
       </div>
