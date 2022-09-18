@@ -12,9 +12,9 @@ currentTimeEl.textContent = moment().format("LLLL");
 
    
 
-var auditHours = function(eventHour) {
+var auditHours = function() {
     
-    $("li").each(function(){
+    $("li").each(function(eventHour){
         
         var getEventHour = $(this).attr("id");
         console.log(getEventHour)
@@ -24,22 +24,22 @@ var auditHours = function(eventHour) {
   
     // apply new class if task is near/over due date
     if (currentHour > getEventHour) {
-        $("textarea").addClass("past");
+        $(this).children("textarea").addClass("past");
         console.log("past")
 
       }
       else if (currentHour < (getEventHour)) {
-        $("textarea").addClass("future");
+        $(this).children("textarea").addClass("future");
         console.log("future")
       }  
       else {
-        $("textarea").addClass("present");
+        $(this).children("textarea").addClass("present");
         console.log("present")
-      }       
+      }  
+      eventHour++     
 
     })
     
-  eventHour++
   };
 
   // event  listener for save button
@@ -57,9 +57,9 @@ var auditHours = function(eventHour) {
   });
   
   setInterval(function() {
-    $(".time-block").each(function() {
-      auditTask($(this));
-    });
+    //$(".time-block").each(function() {
+      auditHours($(this));
+    //});
   }, 1800000);
 
   auditHours();
