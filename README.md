@@ -6,8 +6,8 @@ Responsive Calendar
 ## Built With
 * HTML
 * CSS
-*JavaScript
-*Jquery
+* JavaScript
+* Jquery
 
 ## Website
 https://dus0001.github.io/Daze/
